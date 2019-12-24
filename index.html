@@ -8,53 +8,76 @@
         <link rel="stylesheet" href="css/materialize.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Materialize CSS</title>
+        <style>
+            div > .col {
+                background-color: orangered;
+                border: 1px white solid;
+                line-height: 50px;
+                color: white;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
-            <h2>Icons</h2>
-            <i class="material-icons">cloud_upload</i>
-            <i class="material-icons">photo_library</i>
-
-            <h4>Adding Colors to Icons</h4>
-            <i class="material-icons blue-text text-lighten-2">call</i>
-            <i class="material-icons red-text text-darken-4">call_missed</i>
-            <i class="material-icons green-text text-darken-4">call_received</i>
-
-            <h4>Resizing Icons</h4>
-            <i class="material-icons light-green-text">android</i>
-            <i class="material-icons light-green-text small">android</i>
-            <i class="material-icons light-green-text medium">android</i>
-            <i class="material-icons light-green-text large">android</i>
-
-            <h4>Placing Icons Inside Buttons</h4>
-            <a href="#" class="btn-flat orange darken-2">
-                <i class="material-icons white-text small">attachment</i>
-            </a>
-            <a href="#" class="btn black">
-                <span>PREV</span>
-                <i class="material-icons medium left">skip_previous</i>
-            </a>
-            <a href="#" class="btn black">
-                <i class="material-icons medium">pause</i>
-            </a>
-            <a href="#" class="btn black">
-                <span>NEXT</span>
-                <i class="material-icons medium right">skip_next</i>
-            </a>
-
-            <h4>Placing Icons Inside Floating Buttons</h4>
-            <a href="#" class="btn-floating orange pulse">
-                <i class="material-icons">edit</i>
-            </a>
-            <a href="#" class="btn-floating red pulse">
-                <i class="material-icons">delete</i>
-            </a>
-            <a href="#" class="btn-floating blue pulse">
-                <i class="material-icons">add</i>
-            </a>
-            <a href="#" class="btn-floating purple pulse">
-                <i class="material-icons">save</i>
-            </a>
+            <h3>Responsive Grid</h3>
+            <div class="row">
+                <h4>12 columns</h4>
+                <div class="col s1">1</div>
+                <div class="col s1">2</div>
+                <div class="col s1">3</div>
+                <div class="col s1">4</div>
+                <div class="col s1">5</div>
+                <div class="col s1">6</div>
+                <div class="col s1">7</div>
+                <div class="col s1">8</div>
+                <div class="col s1">9</div>
+                <div class="col s1">10</div>
+                <div class="col s1">11</div>
+                <div class="col s1">12</div>
+                <!-- <div class="col s1">13</div> -->
+            </div>
+            <div class="row">
+                <h4>1 column</h4>
+                <div class="col s12">1</div>
+            </div>
+            <div class="row">
+                <h4>evenly distributed columns</h4>
+                <div class="col s6">1</div>
+                <div class="col s6">2</div>
+                <div class="col s4">1</div>
+                <div class="col s4">2</div>
+                <div class="col s4">3</div>
+                <div class="col s3">1</div>
+                <div class="col s3">2</div>
+                <div class="col s3">3</div>
+                <div class="col s3">4</div>
+                <div class="col s2">1</div>
+                <div class="col s2">2</div>
+                <div class="col s2">3</div>
+                <div class="col s2">4</div>
+                <div class="col s2">5</div>
+                <div class="col s2">6</div>
+            </div>
+            <div class="row">
+                <h4>oddly distributed columns</h4>
+                <div class="col s8">1</div>
+                <div class="col s4">2</div>
+                <div class="col s5">1</div>
+                <div class="col s7">2</div>
+                <div class="col s10">1</div>
+                <div class="col s2">2</div>
+                <div class="col s5">1</div>
+                <div class="col s3">2</div>
+                <div class="col s4">3</div>
+            </div>
+            <div class="row">
+                <h4>above 12 columns</h4>
+                <div class="col s8">A</div>
+                <div class="col s8">A</div>
+                <div class="col s9">A</div>
+                <div class="col s5">A</div>
+            </div>
         </div>
     </body>
 </html>
