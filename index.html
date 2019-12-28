@@ -19,30 +19,15 @@
         </style>
     </head>
     <body>
-        <div class="container">
-            <h3>Responsive Grid</h3>
+       <div class="container">
+           <h2>Hiding Content</h2>
            <div class="row">
-            <h4>Mobile Devices</h4>
-                <div class="col s12">1</div>
-                <div class="col s12">2</div>
-
-                <h4>Tablets and iPads</h4>
-                <div class="col m6">1</div>
-                <div class="col m6">2</div>
-                <div class="col m6">3</div>
-                <div class="col m6">4</div>
-
-                <h4>Desktops and Laptops</h4>
-                <div class="col l4">1</div>
-                <div class="col l4">2</div>
-                <div class="col l4">3</div>
-
-                <h4>For All Screen Sizes</h4>
-                <div class="col s12 m3 l6 xl2">Responsive</div>
-                <div class="col s12 m3 l6 xl2">Responsive</div>
-                <div class="col s12 m3 l6 xl2">Responsive</div>
-                <div class="col s12 m3 l6 xl2">Responsive</div>
-           </div>
-        </div>
+               <div class="col s12 l6 hide-on-large-only">Hide on Desktop</div>
+               <div class="col s12 l6 hide-on-small-only">Hide on Mobile</div>
+               <div class="col s12 l6 hide-on-med-only">Hide on Tablet</div>
+               <div class="col s12 l6 hide-on-med-and-down">Hide on Tablet and Mobile</div>
+               <div class="col s12 l6 hide-on-med-and-up">Hide on Tablet and Desktop</div>
+            </div>
+       </div>
     </body>
 </html>
