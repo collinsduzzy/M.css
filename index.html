@@ -11,23 +11,33 @@
         <style>
             div > .col {
                 background-color: orangered;
-                border: 1px white solid;
-                line-height: 50px;
-                color: white;
-                text-align: center;
+                margin: 30px;
+            }
+            .col > div {
+                height: 150px;
             }
         </style>
     </head>
     <body>
        <div class="container">
-           <h2>Hiding Content</h2>
+           <h2>Shadows</h2>
            <div class="row">
-               <div class="col s12 l6 hide-on-large-only">Hide on Desktop</div>
-               <div class="col s12 l6 hide-on-small-only">Hide on Mobile</div>
-               <div class="col s12 l6 hide-on-med-only">Hide on Tablet</div>
-               <div class="col s12 l6 hide-on-med-and-down">Hide on Tablet and Mobile</div>
-               <div class="col s12 l6 hide-on-med-and-up">Hide on Tablet and Desktop</div>
-            </div>
+               <div class="col s2 z-depth-0">
+                   <div></div>
+               </div>
+               <div class="col s2 z-depth-1">
+                   <div></div>
+               </div>
+               <div class="col s2 z-depth-2">
+                   <div></div>
+               </div>
+               <div class="col s2 z-depth-4">
+                   <div></div>
+               </div>
+               <div class="col s2 z-depth-5">
+                   <div></div>
+               </div>
+           </div>
        </div>
     </body>
 </html>
