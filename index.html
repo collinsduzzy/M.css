@@ -32,8 +32,26 @@
                 </ul>
             </nav>
         </header>
-        
-        <main></main>
+
+        <main>
+            <div class="container">
+                <h3>Modals</h3>
+                <p>I accept the <a href="#terms" class="modal-trigger">policies</a> of the institute.</p>
+                <div class="modal" id="terms">
+                    <div class="modal-content">
+                        <h4>Terms and Policies</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Ducimus voluptatem aut molestias aliquam, expedita eligendi 
+                            porro blanditiis dolorum temporibus eius similique tempore 
+                            iusto dolores est delectus? Corporis obcaecati molestias sunt?
+                        </p>
+                       <div class="modal-footer">
+                        <a href="#" class="btn blue darken-4 modal-close">I accept</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         <footer></footer>
 
         <script src="js/jqueryv3.4.1.js"></script>
@@ -41,6 +59,7 @@
         <script>
             $(document).ready(function(){
                 $('.sidenav').sidenav();
+                $('.modal').modal();
             });
         </script>
     </body>
