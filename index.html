@@ -4,14 +4,69 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/rcon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/materialize.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <title>Materialize CSS</title>
+        <title>Recipes.com</title>
+        <style>
+            body {
+                position: relative;
+            }
+           header > nav {
+               z-index: 1;
+               position: fixed;
+           }
+           div.slider {
+               z-index: -1;
+           }
+        </style>
     </head>
     <body>
         
         <!--Header-->
+        <header>
+            <nav class="nav-wrapper white">
+                <div class="container navbar">
+                    <a href="#" class="brand-logo">
+                        <img src="img/logo.png" alt="" width="150px">
+                    </a>
+                    <a href="#mobile-links" class="sidenav-trigger">
+                        <i class="material-icons orange-text text-darken-4">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#" class=" orange-text text-darken-4"><strong>Home</strong> </a></li>
+                        <li><a href="#" class=" orange-text text-darken-4"><strong>Cakes</strong> </a></li>
+                        <li><a href="#" class=" orange-text text-darken-4"><strong>Chicken</strong> </a></li>
+                        <li><a href="#" class=" orange-text text-darken-4"><strong>Soups</strong> </a></li>
+                        <li><a href="#" class=" orange-text text-darken-4"><strong>Contact</strong> </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul class="sidenav orange darken-4" id="mobile-links">
+                <li><a href="#" class="white-text">Home</a></li>
+                <li><a href="#" class="white-text">Cakes</a></li>
+                <li><a href="#" class="white-text">Chicken</a></li>
+                <li><a href="#" class="white-text">Soups</a></li>
+                <li><a href="#" class="white-text">Contact</a></li>
+            </ul>
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/cake_fruit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/shrimp_soup.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/chicken_3.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/dessert_chocolate.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </header>
+
         <!--Home-->
         <!--About Us-->
         <!--Recipes-->
@@ -22,8 +77,13 @@
         <script src="js/materialize.js"></script>
         <script>
             $(document).ready(function(){
-
-               });
+                $('.sidenav').sidenav();
+                $('.slider').slider({
+                    indicators : false,
+                    height : 650,
+                    interval : 6000,
+                });
+            });
         </script>
     </body>
 </html>
