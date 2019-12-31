@@ -7,7 +7,7 @@
         <link rel="shortcut icon" href="img/rcon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/materialize.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <title>Recipes.com</title>
+        <title>Home - Recipe.com</title>
         <style>
             body {
                 position: relative;
@@ -19,10 +19,16 @@
            div.slider {
                z-index: -1;
            }
+           p {
+               font-size: 1.5em;
+               text-align: justify;
+           }
+           .material-icons {
+               font-size: 48px;
+           }
         </style>
     </head>
     <body>
-        
         <!--Header-->
         <header>
             <nav class="nav-wrapper white">
@@ -66,8 +72,84 @@
                 </ul>
             </div>
         </header>
-
         <!--Home-->
+        <main>
+            <section class="section container">
+                    <h4 class="orange-text text-darken-4">Hello there, foodies!</h4>
+                    <p>
+                        You smart, you loyal, you a genius. You see the hedges, how I got it shaped up? 
+                        It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. 
+                        You see the hedges, how I got it shaped up? It’s important to shape up your hedges, 
+                        it’s like getting a haircut, stay fresh. I’m giving you cloth talk, cloth. 
+                        Special cloth alert, cut from a special cloth. In life there will be road blocks
+                         but we will over come it. In life you have to take the trash out, 
+                        if you have trash in your life, take it out, throw it away, get rid of it, major key.
+                    </p>
+            </section>
+            <div class="divider container"></div>
+            <section class="section container">
+                    <h4 class="orange-text text-darken-4 center">Begin your journey...</h4>
+                    <div class="row">
+                        <div class="col s12 l4">
+                            <ul class="collapsible hoverable">
+                                <li>
+                                    <div class="collapsible-header center orange darken-4 white-text">
+                                        <i class="material-icons">label</i>
+                                        <strong>FOR THE LOVE OF CAKES!</strong>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        <img src="img/sponge_cake.webp" alt="" class="responsive-img">
+                                       <h6>
+                                        I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth.
+                                         It’s on you how you want to live your life. Everyone has a choice.
+                                       </h6>
+                                       <a href="#" class="btn-flat orange darken-4 white-text"><strong>All Cake Recipes</strong></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s12 l4 center-align">
+                            <ul class="collapsible hoverable">
+                                <li>
+                                    <div class="collapsible-header center orange darken-4 white-text">
+                                        <i class="material-icons">label</i>
+                                        <strong>WHAT ADO 'BOUT CHICKEN</strong>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        <img src="img/chicken_8.webp" alt="" class="responsive-img">
+                                       <h6>
+                                        A major key, never panic. 
+                                        Don’t panic, when it gets crazy and rough, don’t panic, stay calm. 
+                                        Congratulations, you played yourself.
+                                       </h6>
+                                       <a href="#" class="btn-flat orange darken-4 white-text"><strong>All Chicken Recipes</strong></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s12 l4 right-align">
+                            <ul class="collapsible hoverable">
+                                <li>
+                                    <div class="collapsible-header center orange darken-4 white-text">
+                                        <i class="material-icons">label</i>
+                                        <strong>SOUPS FOR EACH SEASON</strong>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        <img src="img/mexican_soup.webp" alt="" class="responsive-img">
+                                       <h6>
+                                        Every chance I get, I water the plants, Lion! 
+                                        The key to success is to keep your head above the water, never give up. 
+                                        The key is to drink fresh coconut, trust me.
+                                       </h6>
+                                       <a href="#" class="btn-flat orange darken-4 white-text"><strong>All Chicken Recipes</strong></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+            <div class="divider container"></div>
+        </main>
         <!--About Us-->
         <!--Recipes-->
         <!--Contact-->
@@ -83,6 +165,7 @@
                     height : 650,
                     interval : 6000,
                 });
+                $('.collapsible').collapsible();
             });
         </script>
     </body>
