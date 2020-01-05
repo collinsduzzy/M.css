@@ -9,9 +9,6 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <title>Home - Recipe.com</title>
         <style>
-            body {
-                position: relative;
-            }
            header > nav {
                z-index: 1;
                position: fixed;
@@ -23,9 +20,9 @@
                font-size: 1.5em;
                text-align: justify;
            }
-           /* .material-icons {
-               font-size: 48px;
-           } */
+           .slider .indicators .indicator-item.active {
+               background-color: #e65100;
+           }
         </style>
     </head>
     <body>
@@ -43,7 +40,7 @@
                         <li><a href="#" class=" orange-text text-darken-4"><strong>Home</strong> </a></li>
                         <li><a href="#" class=" orange-text text-darken-4"><strong>Cakes</strong> </a></li>
                         <li><a href="#" class=" orange-text text-darken-4"><strong>Soups</strong> </a></li>
-                        <li><a href="#" class=" orange-text text-darken-4"><strong>Chicken</strong> </a></li>
+                        <li><a href="#chicken" class=" orange-text text-darken-4"><strong>Chicken</strong> </a></li>
                         <li><a href="#" class=" orange-text text-darken-4"><strong>Customers</strong> </a></li>
                     </ul>
                 </div>
@@ -79,12 +76,11 @@
         <main>
             <!--Welcome-->
             <section class="section container">
-                    <h4 class="orange-text text-darken-4">Hello there, foodies!</h4>
+                    <h3 class="orange-text text-darken-4">Hello there, foodies!</h3>
                     <p>
                         You smart, you loyal, you a genius. You see the hedges, how I got it shaped up? 
                         It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. 
-                        You see the hedges, how I got it shaped up? It’s important to shape up your hedges, 
-                        it’s like getting a haircut, stay fresh. I’m giving you cloth talk, cloth. 
+                         I’m giving you cloth talk, cloth. 
                         Special cloth alert, cut from a special cloth. In life there will be road blocks
                          but we will over come it. In life you have to take the trash out, 
                         if you have trash in your life, take it out, throw it away, get rid of it, major key.
@@ -92,20 +88,20 @@
             </section>
             <div class="divider container"></div>
             <section class="section container">
-                    <h4 class="orange-text text-darken-4 center">Begin your journey...</h4>
+                <br>
                     <div class="row">
                         <div class="col s12 l4">
-                            <ul class="collapsible hoverable">
+                            <ul class="collapsible popout">
                                 <li>
                                     <div class="collapsible-header center orange darken-4 white-text">
                                         <i class="material-icons">label</i>
-                                        <strong>FOR THE LOVE OF CAKES!</strong>
+                                        <strong>CAKES!</strong>
                                     </div>
                                     <div class="collapsible-body">
                                         <img src="img/sponge_cake.webp" alt="" class="responsive-img">
                                        <h6>
                                         I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth.
-                                         It’s on you how you want to live your life. Everyone has a choice.
+                                         It’s on you how you want to live your life.
                                        </h6>
                                        <a href="#" class="btn-flat orange darken-4 white-text"><strong>All Cake Recipes</strong></a>
                                     </div>
@@ -113,11 +109,29 @@
                             </ul>
                         </div>
                         <div class="col s12 l4">
-                            <ul class="collapsible hoverable">
+                            <ul class="collapsible popout">
                                 <li>
                                     <div class="collapsible-header center orange darken-4 white-text">
                                         <i class="material-icons">label</i>
-                                        <strong>WHAT ADO 'BOUT CHICKEN</strong>
+                                        <strong>SOUPS</strong>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        <img src="img/mexican_soup.webp" alt="" class="responsive-img">
+                                       <h6>
+                                        The key to success is to keep your head above the water, never give up. 
+                                        The key is to drink fresh coconut. Special cloth talk!
+                                       </h6>
+                                       <a href="#" class="btn-flat orange darken-4 white-text"><strong>All Soup Recipes</strong></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s12 l4">
+                            <ul class="collapsible popout">
+                                <li>
+                                    <div class="collapsible-header center orange darken-4 white-text">
+                                        <i class="material-icons">label</i>
+                                        <strong>CHICKEN</strong>
                                     </div>
                                     <div class="collapsible-body">
                                         <img src="img/chicken_8.webp" alt="" class="responsive-img">
@@ -126,40 +140,18 @@
                                         Don’t panic, when it gets crazy and rough, don’t panic, stay calm. 
                                         The key is to drink some fresh milk.
                                        </h6>
-                                       <a href="#" class="btn-flat orange darken-4 white-text"><strong>All Chicken Recipes</strong></a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col s12 l4">
-                            <ul class="collapsible hoverable">
-                                <li>
-                                    <div class="collapsible-header center orange darken-4 white-text">
-                                        <i class="material-icons">label</i>
-                                        <strong>SOUPS FOR EACH SEASON</strong>
-                                    </div>
-                                    <div class="collapsible-body">
-                                        <img src="img/mexican_soup.webp" alt="" class="responsive-img">
-                                       <h6>
-                                        Every chance I get, I water the plants.
-                                        The key to success is to keep your head above the water, never give up. 
-                                        The key is to drink fresh coconut. Lion!
-                                       </h6>
-                                       <a href="#" class="btn-flat orange darken-4 white-text"><strong>All Soup Recipes</strong></a>
+                                       <a href="#chicken" class="btn-flat orange darken-4 white-text"><strong>All Chicken Recipes</strong></a>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
             </section>
-            <div class="parallax-container">
-                <div class="parallax">
-                    <img src="img/chicken.jpg" alt="" class="responsive-img">
-                </div>
-            </div>
+            <div class="divider container"></div>
               <!--Comments-->
             <section class="container section">
-                <h4 class="orange-text text-darken-4">What Our Customers Say...</h4>
+                <h3 class="orange-text text-darken-4 center">What Our Customers Say...</h3>
+                <br>
                     <ul class="collection">
                         <li class="collection-item avatar">
                             <i class="material-icons circle orange darken-4 white-text">person</i>
@@ -198,10 +190,14 @@
                         </li>
                     </ul>
             </section>
-            <div class="divider"></div>
-            <!--Recipes-->
+            <!--Recipes: Cake-->
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="img/cake.jpg" alt="" class="responsive-img">
+                </div>
+            </div>
             <section class="section container">
-                    <h4 class="orange-text text-darken-4"><strong>Cakes</strong></h4>
+                    <h3 class="orange-text text-darken-4">Cakes</h3>
                     <p>
                         The other day the grass was brown, now it’s green because I ain’t give up.
                          Never surrender. The key is to enjoy life, because they don’t want you to enjoy life. 
@@ -212,7 +208,7 @@
             <section class="container">
                     <div class="row">
                         <div class="col s12 l4">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image">
                                     <img src="img/sponge_cake.webp" alt="">
                                 </div>
@@ -227,7 +223,7 @@
                             </div>
                         </div>
                         <div class="col s12 l4">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image">
                                     <img src="img/velvet_cake.webp" alt="">
                                 </div>
@@ -242,7 +238,7 @@
                             </div>
                         </div>
                         <div class="col s12 l4">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image">
                                     <img src="img/courgette_cake.webp" alt="">
                                 </div>
@@ -259,7 +255,7 @@
                     </div>
                     <div class="row">
                         <div class="col s12 l4">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image">
                                     <img src="img/chocolate_2.webp" alt="">
                                 </div>
@@ -274,7 +270,7 @@
                             </div>
                         </div>
                         <div class="col s12 l4">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image">
                                     <img src="img/coffeeslab_cake.webp" alt="">
                                 </div>
@@ -289,7 +285,7 @@
                             </div>
                         </div>
                         <div class="col s12 l4">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image">
                                     <img src="img/pistachio_cake.webp" alt="">
                                 </div>
@@ -306,7 +302,7 @@
                     </div>
                     <div class="row">
                         <div class="col s12 l4">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image">
                                     <img src="img/polenta_cake.webp" alt="">
                                 </div>
@@ -321,7 +317,7 @@
                             </div>
                         </div>
                         <div class="col s12 l4">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image">
                                     <img src="img/buttermilk_cake.webp" alt="">
                                 </div>
@@ -336,7 +332,7 @@
                             </div>
                         </div>
                         <div class="col s12 l4">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image">
                                     <img src="img/chocolate_1.webp" alt="">
                                 </div>
@@ -352,9 +348,14 @@
                         </div>
                     </div>
             </section>
-            <div class="divider"></div>
+            <!--Recipes: Soup-->
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="img/soup.jpg" alt="" class="responsive-img">
+                </div>
+            </div>
             <section class="section container">
-                <h4 class="orange-text text-darken-4"><strong>Soups</strong></h4>
+                <h3 class="orange-text text-darken-4">Soups</h3>
                 <p>
                     When you believe, you will succeed. The first of the month is coming, we have to get money, 
                     we have no choice. It cost money to eat and they don’t want you to eat. 
@@ -364,7 +365,7 @@
             <section class="container">
                 <div class="row">
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/lentil_soup.webp" alt="">
                             </div>
@@ -379,7 +380,7 @@
                         </div>
                     </div>
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/olive_soup.webp" alt="">
                             </div>
@@ -394,7 +395,7 @@
                         </div>
                     </div>
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/miso_soup.webp" alt="">
                             </div>
@@ -411,7 +412,7 @@
                 </div>
                 <div class="row">
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/chilli_soup.webp" alt="">
                             </div>
@@ -426,7 +427,7 @@
                         </div>
                     </div>
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/pumpkin_soup.webp" alt="">
                             </div>
@@ -441,7 +442,7 @@
                         </div>
                     </div>
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/winter_soup.jpg" alt="">
                             </div>
@@ -458,7 +459,7 @@
                 </div>
                 <div class="row">
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/tom_soup.webp" alt="">
                             </div>
@@ -473,7 +474,7 @@
                         </div>
                     </div>
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/morroco_soup.webp" alt="">
                             </div>
@@ -488,7 +489,7 @@
                         </div>
                     </div>
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/mexican_soup.webp" alt="">
                             </div>
@@ -504,10 +505,14 @@
                     </div>
                 </div>
             </section>
-            <div class="divider"></div>
-            <!--Recipes-->
+            <!--Recipes: Chicken-->
+            <div id="chicken" class="parallax-container scrollspy">
+                <div class="parallax">
+                    <img src="img/chicken.jpg" alt="" class="responsive-img">
+                </div>
+            </div>
             <section class="section container">
-                    <h4 class="orange-text text-darken-4"><strong>Chicken</strong></h4>
+                    <h3 class="orange-text text-darken-4">Chicken</h3>
                     <p>
                         The key to more success is to have a lot of pillows. We the best. 
                         The ladies always say Khaled you smell good, I use no cologne. 
@@ -517,7 +522,7 @@
             <section class="container">
                 <div class="row">
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/chicken_5.webp" alt="">
                             </div>
@@ -532,7 +537,7 @@
                         </div>
                     </div>
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/chicken_11.webp" alt="">
                             </div>
@@ -547,7 +552,7 @@
                         </div>
                     </div>
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/chicken_1.webp" alt="">
                             </div>
@@ -564,7 +569,7 @@
                 </div>
                 <div class="row">
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/chicken_8.webp" alt="">
                             </div>
@@ -579,7 +584,7 @@
                         </div>
                     </div>
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/chicken_10.webp" alt="">
                             </div>
@@ -594,7 +599,7 @@
                         </div>
                     </div>
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/chicken_2.webp" alt="">
                             </div>
@@ -611,7 +616,7 @@
                 </div>
                 <div class="row">
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/caramel.webp" alt="">
                             </div>
@@ -626,7 +631,7 @@
                         </div>
                     </div>
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/ramen.webp" alt="">
                             </div>
@@ -641,7 +646,7 @@
                         </div>
                     </div>
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/saag.webp" alt="">
                             </div>
@@ -657,24 +662,18 @@
                     </div>
                 </div>
             </section>
-            <div class="divider container"></div>
-            <div class="parallax-container">
-                <div class="parallax">
-                    <img src="img/cake.jpg" alt="" class="responsive-img">
-                </div>
-            </div>
         </main>
         <!--Contact-->
         <!--Footer-->
-        <footer class="footer black">
+        <footer class="page-footer black">
             <div class="container">
                 <div class="row">
-                    <div class="col s12 l3">
+                    <div class="col s6 l3">
                         <img src="img/logo.png" width="70%" class="responsive-img">
                         <h6 class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                             Corporis doloremque doloribus beatae magni in natus eligendi.</h6>
                     </div>
-                    <div class="col s12 l4 push-l5">
+                    <div class="col s6 l4 push-l5">
                         <h4 class="orange-text text-darken-4"><strong>Quick Links</strong></h4>
                         <ul>
                             <li><a href="" class="white-text">Back to top</a></li>
@@ -686,6 +685,11 @@
                     </div>
                 </div>
             </div>
+            <div class="footer-copyright orange darken-4">
+                <div class="container">
+                    <h6 class="white-text center-align"> © 2020 Recipe.com</h6>
+                </div>
+            </div>
         </footer>
        
         <script src="js/jqueryv3.4.1.js"></script>
@@ -694,12 +698,11 @@
             $(document).ready(function(){
                 $('.sidenav').sidenav();
                 $('.slider').slider({
-                    indicators : false,
-                    height : 500,
-                    interval : 6000,
+                    height : 600,
                 });
                 $('.collapsible').collapsible();
                 $('.parallax').parallax();
+                $('.scrollspy').scrollSpy();
             });
         </script>
     </body>
