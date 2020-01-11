@@ -11,36 +11,22 @@
     </head>
     <body>
        <div class="container">
-           <div class="row">
-               <div class="col s12 l4 valign">
-                   <h4>Carousel</h4>
-                   <p>Another great way to display pictures
-                        using a slider in a website with the Cascading Style Sheets 
-                        responsive framework Materialize CSS. It is also also mobile and touch friendly! 
-                        Check out this carousel on the right/bottom of the page. Woi yoi!! 
-                    </p>
-               </div>
-               <div class="col s12 l7 push-l1">
-                   <div class="carousel">
-                       <a href="#one" class="carousel-item">
-                           <img src="img/bulb.jpg" alt="">
-                       </a>
-                       <a href="#two" class="carousel-item">
-                           <img src="img/leaves.jpg" alt="">
-                       </a>
-                       <a href="#three" class="carousel-item">
-                           <img src="img/candle.jpg" alt="">
-                       </a>
-                       <a href="#four" class="carousel-item">
-                           <img src="img/spiral.jpg" alt="">
-                       </a>
-                       <a href="#five" class="carousel-item">
-                           <img src="img/door.jpg" alt="">
-                       </a>
-                   </div>
-               </div>
+           <h2>Working With Videos</h2>
+           <h4>Normal Video</h4>
+           <video src="img/lights.mp4"></video>
+           <br><br>
+
+            <h4>Responsive Video</h4>
+           <video class="responsive-video" controls>
+               <source src="img/lights.mp4" type="video/mp4">
+           </video>
+
+           <h4>Embedded Responsive Video</h4>
+           <div class="video-container">
+               <iframe src="https://www.youtube.com/watch?v=l0U7SxXHkPY" allowfullscreen></iframe>
            </div>
        </div>
+
        <script src="js/jqueryv3.4.1.js"></script>
        <script src="js/materialize.js"></script>
        <script>
