@@ -10,28 +10,44 @@
         <title>Materialize CSS</title>
     </head>
     <body>
-       <div class="container">
-           <h2>Working With Videos</h2>
-           <h4>Normal Video</h4>
-           <video src="img/lights.mp4"></video>
-           <br><br>
-
-            <h4>Responsive Video</h4>
-           <video class="responsive-video" controls>
-               <source src="img/lights.mp4" type="video/mp4">
-           </video>
-
-           <h4>Embedded Responsive Video</h4>
-           <div class="video-container">
-               <iframe src="https://www.youtube.com/watch?v=l0U7SxXHkPY" allowfullscreen></iframe>
-           </div>
-       </div>
+        <div class="container">
+            <h2>Fixed Action Button</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Iure enim nostrum officiis pariatur cum dolor sunt molestias illo 
+                saepe asperiores adipisci voluptas dolorum soluta cupiditate 
+                accusantium voluptatum eius, provident odit.
+            </p>
+        </div>
+        <div class="fixed-action-btn">
+            <a href="#" class="btn-floating btn-large green darken-4 pulse">
+                <i class="material-icons large">menu</i>
+            </a>
+            <!--Adding Content to a Fixed Action Button-->
+            <ul>
+                <li><a href="#" class="btn-floating red">
+                    <i class="material-icons">home</i>
+                </a></li>
+                <li><a href="#" class="btn-floating blue">
+                    <i class="material-icons">chat</i>
+                </a></li>
+                <li><a href="#" class="btn-floating orange">
+                    <i class="material-icons">face</i>
+                </a></li>
+                <li><a href="#" class="btn-floating purple">
+                    <i class="material-icons">room</i>
+                </a></li>
+            </ul>
+        </div>
 
        <script src="js/jqueryv3.4.1.js"></script>
        <script src="js/materialize.js"></script>
        <script>
            $(document).ready(function(){
-               $('.carousel').carousel();
+               $('.fixed-action-btn').floatingActionButton({
+                   //styling the FAB
+                   direction: 'left',
+                   hoverEnabled: false, 
+               });
            });
        </script>
     </body>
