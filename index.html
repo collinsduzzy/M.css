@@ -10,45 +10,38 @@
         <title>Materialize CSS</title>
     </head>
     <body>
-        <div class="container">
-            <h2>Fixed Action Button</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Iure enim nostrum officiis pariatur cum dolor sunt molestias illo 
-                saepe asperiores adipisci voluptas dolorum soluta cupiditate 
-                accusantium voluptatum eius, provident odit.
-            </p>
-        </div>
-        <div class="fixed-action-btn">
-            <a href="#" class="btn-floating btn-large green darken-4 pulse">
-                <i class="material-icons large">menu</i>
-            </a>
-            <!--Adding Content to a Fixed Action Button-->
-            <ul>
-                <li><a href="#" class="btn-floating red">
-                    <i class="material-icons">home</i>
-                </a></li>
-                <li><a href="#" class="btn-floating blue">
-                    <i class="material-icons">chat</i>
-                </a></li>
-                <li><a href="#" class="btn-floating orange">
-                    <i class="material-icons">face</i>
-                </a></li>
-                <li><a href="#" class="btn-floating purple">
-                    <i class="material-icons">room</i>
-                </a></li>
-            </ul>
-        </div>
-
-       <script src="js/jqueryv3.4.1.js"></script>
-       <script src="js/materialize.js"></script>
-       <script>
-           $(document).ready(function(){
-               $('.fixed-action-btn').floatingActionButton({
-                   //styling the FAB
-                   direction: 'left',
-                   hoverEnabled: false, 
-               });
-           });
-       </script>
+        <header>
+            <nav class="nav-wrapper red darken-4">
+               <div class="container">
+                <a href="#" class="brand-logo">M.css</a>
+                <ul class="right">
+                    <li><a href="#" class="tooltipped" data-position="left" data-tooltip="Home">
+                        <i class="material-icons">home</i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped" data-position="bottom" data-tooltip="Chat">
+                        <i class="material-icons">message</i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped" data-position="bottom" data-tooltip="Photos">
+                        <i class="material-icons">camera</i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped" data-position="right" data-tooltip="Sign In">
+                        <i class="material-icons">person</i>
+                    </a></li>
+               </div>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h2>Tooltips</h2>
+                <p>a great way to display more details on icons</p>
+                <a href="#" class="btn blue darken-4 tooltipped" data-position="top" data-tooltip="you'd just hovered on me!">BUTTON</a>
+            </div>
+        </main>
+        <script src="js/jqueryv3.4.1.js"></script>
+        <script src="js/materialize.js"></script>
+        <script>
+            $('.tooltipped').tooltip();
+        </script>
     </body>
 </html>
