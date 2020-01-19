@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="shortcut icon" href="img/rcon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
         <link rel="stylesheet" href="css/materialize.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <title>Materialize CSS</title>
@@ -16,54 +16,63 @@
             <div class="row">
                 <form class="col s12">
                     <div class="row">
-                        <h4>Text Fields</h4>
+                        <h4>Select Fields</h4>
                         <div class="col s6 input-field">
-                            <input type="text" id="fname">
-                            <label for="fname">First Name</label>
+                            <select id="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="female">Do Not Specify</option>
+                            </select>
+                            <label for="gender">Gender</label>
                         </div>
                         <div class="col s6 input-field">
-                            <input type="text" id="lname">
-                            <label for="lname">Last Name</label>
+                            <select>
+                                <option value="" disabled selected>Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="female">Do Not Specify</option>
+                            </select>
                         </div>
                     </div>
                     <div class="row">
-                        <h4>Adding Placeholders & Disabled Fields</h4>
+                        <h4>Multiple Select Fields & Adding Images to Options</h4>
                         <div class="col s6 input-field">
-                            <input type="text" placeholder="e.g. Michael">
-                            <label for="mname">Middle Name</label>
+                            <select multiple>
+                                <option value="" disabled>Secondary Qualification</option>
+                                <option value="2">WAEC</option>
+                                <option value="3">NECO</option>
+                                <option value="4">GCE</option>
+                                <option value="4">NABTEB</option>
+                            </select>
                         </div>
                         <div class="col s6 input-field">
-                            <input type="text" id="mname2" disabled>
-                            <label for="mname2">Middle Name II</label>
+                            <select class="icons">
+                                <option value="" disabled selected>Your Team</option>
+                                <option value="1" data-icon="img/cardiff.jpeg" class="left">Cardiff AFC</option>
+                                <option value="1" data-icon="img/southampton.jpeg" class="left">Southampton FC</option>
+                                <option value="1" data-icon="img/stoke.jpeg" class="left">Stoke FC</option>
+                            </select>
                         </div>
                     </div>
                     <div class="row">
-                        <h4>HTML5 Validation & Helper Text</h4>
-                        <div class="col s12 input-field">
-                            <input type="email" id="mail" class="validate">
-                            <label for="mail">Your Email</label>
-                            <span class="helper-text" data-error="invalid" data-success="correct"></span>
+                        <h4>File Upload Fields</h4>
+                        <div class="col s6 input-field file-field">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path" type="text" placeholder="Upload your docs">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <h4>Adding Icons to Fields</h4>
-                        <div class="col s6 input-field">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input type="text" id="uname">
-                            <label for="uname">UserID</label>
-                        </div>
-                        <div class="col s6 input-field">
-                            <i class="material-icons prefix">phone</i>
-                            <input type="number" id="tel">
-                            <label for="tel">Phone Number</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h4>Textarea</h4>
-                        <div class="col s12 input-field">
-                            <i class="material-icons prefix">mode_edit</i>
-                            <textarea class="materialize-textarea" id="bio"></textarea>
-                            <label for="bio">About Yourself</label>
+                        <div class="col s6 input-field file-field">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path" type="text" placeholder="Upload your docs">
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -73,7 +82,7 @@
         <script src="js/jqueryv3.4.1.js"></script>
         <script src="js/materialize.js"></script>
         <script>
-            
+            $('select').formSelect();
         </script>
     </body>
 </html>
