@@ -5,35 +5,36 @@ A repository tracking changes to files and folders in my Materialize CSS Tutoria
 ## Getting Started
 
 You can clone or download this repository to your local machine using the link below:
+
 https://github.com/collinsduzzy/M
 
 ### How To Use
-If you have downloaded the ZIP file of the repository, extract the contents to a prefered directory in your machine.
+* If you have downloaded the ZIP file of the repository, extract the contents to a prefered directory in your machine.
 
-Open the folder 'M' with your code.
+* Open the folder 'M' with your preferred text editor.
 
-The code/files of the latest commit [Lesson 30: Documentation] would be displayed.
+* The code/files of the latest commit [Updated Documentation] would be displayed.
 
-Each commit represents a lesson. Use the terminal to run the following command to view all commits/lessons:
+* Otherwise indicated, each commit represents a lesson. Use the terminal to run the following command to view all commits/lessons:
 
-git log --oneline
+  *git log --oneline*
 
-To view the code/resources for each lesson, run the following command:
+* To view the code/resources for each lesson, run the following command:
 
-git checkout [commit_id]
-Example: git checkout [1bccc442]
+  *git checkout [commit_id]*
+  *Example: git checkout [1bccc442]*
 
-To shelve any local changes made to the files before switching to another commit, use the following command:
+* To shelve any local changes made to the files before switching to another commit, use the following command:
 
-git stash 
+  *git stash* 
 
 ### Prerequisites
 
-git
-GitHub
-Code Editor (VSCode recommended)
-Web Browser (Google Chrome recommended)
-Terminal (cmd recommended)
+* git
+* GitHub
+* Code Editor (VSCode recommended)
+* Web Browser (Google Chrome recommended)
+* Terminal (cmd recommended)
 
 ## Built With
 
@@ -44,7 +45,7 @@ Terminal (cmd recommended)
 
 ## Authors
 
-* **Collins Okoroafor** - *Project Lead* - [collinsduzzy](https://github.com/collinsduzzy)
+* **Collins Okoroafor** - *Project Lead* - [collinsduzzy](https://twitter.com/xollinsduzzy)
 
 ## License
 
