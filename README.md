@@ -23,7 +23,7 @@ https://github.com/collinsduzzy/M
 
   *git checkout [commit_id]*
   
-  *Example: git checkout [1bccc442]*
+  Example: *git checkout [1bccc442]*
 
 * To shelve any local changes made to the files before switching to another commit, use the following command:
 
